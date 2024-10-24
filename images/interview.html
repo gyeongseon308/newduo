@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>듀오_interview</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+	body{
+	  font-family: "Nanum Gothic", sans-serif;
+  	  font-weight: 400;
+	  font-style: normal;
+	  line-height: 25px;
+	}
+	
+    *{margin: 0px; padding: 0px;}
+    ul{list-style: none;}
+    img{border: 0; vertical-align: top;}
+    a{text-decoration: none; color:black;}
+	
+	.clearFix{
+		content:"";
+		display:block;
+		clear:both;
+		}
+
+    #header{
+        background-image: url(interview_024.png);
+        width: 100%;
+        height: 100px;
+        position: relative;
+        z-index: 120;
+		
+    }
+
+    #header h1{
+        float:left;
+        width: 70px;
+        margin-top: 25px;
+		margin-left: 100px;
+    }
+    #header .gnb{
+        width: 1000px;
+        margin: 0px auto;
+		padding-left: 180px;}
+    
+	#header .gnb>li{
+		height: 30px;
+		margin-top: 35px;
+        float: left;
+		/* border: 1px solid red; */
+		width: 170px;
+		text-align: center;
+    }
+	/* #header .gnb>li:hover{
+	border-bottom: 3px solid white;
+	} */
+	#header .gnb>li a{
+		font-size: 15pt;
+	}
+	#header .gnb>li .sub{
+		display: none;
+	}
+	#header .gnb>li:hover .sub{
+		display: block;
+		margin-top: 5px;
+		background-color: white;
+		border-radius: 10px;
+		line-height: 40px;
+	}
+
+    #header .gnb li .sub li>a{
+        font-size: 11pt;
+        color:gray;
+    }
+	#header .gnb li .sub li>a:hover{
+        color:#b7221b;
+
+    }
+    #header a{color: white;
+	opacity: 10px;}
+    
+    
+    #header p{
+        float: right;
+        margin-top: 21px;
+        margin-right: 100px;
+        font-size: 15pt;
+        text-align: center;
+    }
+    #section .interveiw_section_1{
+        background-image: url(interview_03.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%; 
+        width:100%; height: 980px;
+        background-size: cover;
+        box-sizing: border-box;
+        position: relative;
+
+    }
+    #section .interveiw_section_1 h1{
+        margin-left: 200px;
+		padding-top: 150px;
+        color: rgb(255, 255, 255);
+		animation: fadein 3s;
+		animation-name: con;
+    }
+		@keyframes con{
+			from{opacity: 0;
+			}
+			to{opacity: 1;}
+		}
+	
+	
+    #section .interveiw_section_1 .mic{
+        float: left;
+		width: 500px;
+		margin-left: -150px;
+		margin-top: 50px;
+		animation: move;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+    }
+		@keyframes move{
+			from{margin-left: -150px;
+			}
+			to{margin-left: -30px;}
+		}
+    #section .interveiw_section_1 .qanda{
+        float: left;
+        position:absolute;
+        top: 300px;
+		left: 650px;
+		animation: fadein 5s;
+		animation-name: con;
+	}
+		
+    #section .interveiw_section_1 .boss{
+        float: right;
+		margin-top: 35px;
+		margin-left: 100px;
+		animation: mov;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+    }
+		@keyframes mov{
+			from{margin-right: 0px;
+			}
+			to{margin-right: 120px;}
+		}
+
+/*
+    #section .interveiw_section_1 .mic img{
+		;}
+*/
+    #section .interveiw_section_1 .boss img{width: 500px;}
+    #section .interveiw_section_1 .qanda img{width: 700px;}
+    
+    #section .interveiw_section_1 .aanda{
+    float: left;
+    position:absolute;
+	top: 200px;
+    left: 350px;
+    }
+		#section .interveiw_section_1 .main_com{
+			margin-top: 500px;
+			margin-left: 950px;
+			line-height: 70px;
+    }
+		#section .interveiw_section_1 .main_com .com_1,
+		#section .interveiw_section_1 .main_com .com_2,
+		#section .interveiw_section_1 .main_com .com_3{
+			background-color: white;
+			border-radius: 300px;
+			width: 220px; height: 50px;
+			margin-top: 10px;
+			text-align: center;
+			padding-bottom: 15px;
+		    opacity: 0;
+		}
+		#section .interveiw_section_1 .main_com .com_1{
+			animation: fadein 2s 1 1s forwards;
+/*			animation-delay: 2s;*/
+/*			animation-name: com;*/
+		}
+		
+		@keyframes fadein{
+			from{opacity: 0;
+			}
+			50%{opacity: 1;}
+			to{opacity: 1;}
+		}
+		#section .interveiw_section_1 .main_com .com_2{
+			animation: fadein 2s 1 2s  forwards;
+/*			animation-delay: 4s;*/
+/*			animation-name: com;*/
+		}
+		@keyframes fadein{
+			from{opacity: 0;
+			}
+			50%{opacity: 1;}
+			to{opacity: 1;}
+		}
+		#section .interveiw_section_1 .main_com .com_3{
+			animation: fadein 2s 1 3s  forwards;
+/*			animation-delay: 6s;*/
+/*			animation-name: com;*/
+		}
+		@keyframes fadein{
+			from{opacity: 0;
+			}
+			50%{opacity: 1;}
+			to{opacity: 1;}
+		}
+    #section .interveiw_section_1 h1{font-size: 70px;}
+
+    #section .interveiw_section_2{
+        background-image: url(interview_02.png);
+        background-size: 100%;
+        background-size: cover;
+        box-sizing: border-box;
+		width: calc(100% - 200px); 
+		margin: 0 auto;
+		height: 1080px;
+		position: relative;
+/*		margin-left: 100px;*/
+/*		margin-right: 100px;*/
+        }
+	#section .interveiw_section_2 .titel_qanda{
+		font-size: 80pt;
+		padding-top: 80px;
+		padding-left: 190px;
+/*		margin-top: 70px;*/
+		font-weight: bold;
+		text-align: center;
+		color: gray;
+		transform: rotate(-10deg);
+		z-index: 100;
+		
+	}
+    #section .interveiw_section_2 .couple_1{
+		float: left;
+		margin-left: -20px;
+		background-image: url(interview_100.png);
+		background-size: cover;
+		width: 800px;
+		height: 1000px;
+		position: absolute;
+		margin-left: 40px;
+		top: 70px;
+		z-index: 50;
+		
+		}
+	#section .interveiw_section_2 .couple_1 h1{
+		line-height: 80px;
+		margin-top: 780px;
+		margin-left: 100px;
+		color: white;
+		font-size: 40pt;
+		text-shadow: 5px 5px 10px gray;
+	}
+    #section .interveiw_section_2 .message_all{
+        float: right;
+		margin-right: 40px;
+		margin-top: -30px;
+    }
+	#section .interveiw_section_2 .message_all p{
+		color: white;
+		font-size: 13pt;
+	}
+	#section .interveiw_section_2 .message_all .message_1{
+		background-image: url(interview_07.png);
+		width: 450px; height: 80px;
+		background-repeat: no-repeat;
+		background-size: cover;
+        box-sizing: border-box;
+		text-align: center;
+		line-height: 75px;
+		margin-left: 250px;
+		margin-bottom: 10px;
+		opacity: 0;
+		font-weight: bold;
+	}
+		#section .interveiw_section_2 .message_all .message_1{
+			animation: msg 2s 1 1s  forwards;
+		}
+		@keyframes msg{
+			from{opacity: 0;
+			}
+			to{opacity: 1;}
+		}
+
+	#section .interveiw_section_2 .message_all .message_2{
+		background-image: url(interview_15.png);
+		width: 650px; height: 90px;
+		margin-right: -50px;
+		background-repeat: no-repeat;
+		background-size: contain;
+        box-sizing: border-box;
+		line-height: 30px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 2s  forwards;
+	}
+	#section .interveiw_section_2 .message_all .message_2 p{
+		padding-left: 80px;
+		padding-top: 15px;
+		color: black;
+		font-weight: bold;
+	}
+	#section .interveiw_section_2 .message_all .message_3{
+		background-image: url(interview_07.png);
+		width: 450px; height: 80px;
+		background-repeat: no-repeat;
+		background-size: contain;
+        box-sizing: border-box;
+		text-align: center;
+		line-height: 75px;
+		margin-left: 250px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 3s  forwards;
+		font-weight: bold;
+	}
+		
+	#section .interveiw_section_2 .message_all .message_4{
+		background-image: url(interview_39.png);
+		width: 750px; height: 90px;
+		background-repeat: no-repeat;
+		background-size: contain;
+        box-sizing: border-box;
+		padding-top: 20px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 4s  forwards;
+		font-weight: bold;
+	}
+	#section .interveiw_section_2 .message_all .message_4 p{
+		color: black;
+		font-weight: bold;
+		padding-left: 80px;
+	}
+	#section .interveiw_section_2 .message_all .message_5{
+		background-image: url(interview_07.png);
+		width: 450px; height: 80px;
+		font-weight: bold;
+		background-repeat: no-repeat;
+		background-size: contain;
+        box-sizing: border-box;
+		text-align: center;
+		line-height: 75px;
+		margin-left: 250px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 5s  forwards;
+	}
+
+	#section .interveiw_section_2 .message_all .message_6{
+		background-image: url(interview_87.png);
+		width: 650px; height: 200px;
+/*		margin-right: px;*/
+		background-repeat: no-repeat;
+		background-size: contain;
+        box-sizing: border-box;
+		opacity: 0;
+		animation: msg 2s 1 6s  forwards;
+	}
+	#section .interveiw_section_2 .message_all .message_6 p{
+		color: black;
+		font-weight: bold;
+		padding-top: 35px;
+		line-height: 25px;
+		padding-left: 80px;
+	}
+	#section .interveiw_section_2 .message_all .message_7{
+		background-image: url(interview_50.png);
+		width: 600x; height: 80px;
+		background-repeat: no-repeat;
+		background-size: contain;
+        box-sizing: border-box;
+		text-align: center;
+		margin-left: 170px;
+		padding-top: 25px;
+		padding-right: 60px;
+		margin-bottom: 10px;
+		opacity: 0;
+		font-weight: bold;
+		animation: msg 2s 1 7s  forwards;
+	}
+
+	#section .interveiw_section_2 .message_all .message_8{
+		background-image: url(interview_54.png);
+		width: 650px; height: 200px;
+		background-repeat: no-repeat;
+		background-size: contain;
+        box-sizing: border-box;
+		opacity: 0;
+		animation: msg 2s 1 8s  forwards;
+/*		text-align: center;*/
+	}
+	#section .interveiw_section_2 .message_all .message_8 p{
+		color: black;
+		font-weight: bold;
+		padding-left: 80px;
+		padding-top: 20px;
+		line-height: 25px;
+	}
+	
+	/*	section_3시작*/
+	
+	#section .interveiw_section_3{
+        background-image: url(interview_02.png);
+        background-size: 100%;
+        background-size: cover;
+        box-sizing: border-box;
+		width: calc(100% - 200px); 
+		margin: 0 auto;
+		height: 1080px;
+		position: relative;
+	}
+	 #section .interveiw_section_3 .couple_2{
+		float: right;
+		margin-top: -50px;
+		margin-right: 20px;
+		background-image: url(interview_35.png);
+		background-repeat: no-repeat;
+		width: 750px;
+		height: 950px;
+		background-size: cover;
+	}
+
+	#section .interveiw_section_3 .couple_2 h1{
+		margin-top: 750px;
+		line-height: 80px;
+		float: right;
+		text-align: center;
+		margin-right: 150px;
+		color: white;
+		font-size: 40pt;
+		text-shadow: 5px 5px 10px gray;
+	}
+	#section .interveiw_section_3 .title_qanda_2{
+		font-size: 80pt;
+		padding-left: 300px;
+		text-align: center;
+		color: gray;
+		transform: rotate(-10deg);
+		padding-top: 70px;
+		box-sizing: border-box;
+		z-index: 100;
+	}
+	 #section .interveiw_section_3 .message_all_2{
+         float: right;
+		 margin-top: -70px;
+	}
+
+	#section .interveiw_section_3 .message_all_2 p{
+		color: white;
+		font-size: 13pt;
+		font-weight: bold;
+		padding-top: 25px;
+		margin-left: 30px;
+	}
+	
+	#section .interveiw_section_3 .message_all_2 .message_9{
+		background-image: url(interview_07.png);
+		margin-left: 185px;
+		width: 450px; height: 80px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0;
+		animation: msg 2s 1 1s  forwards;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_9 p{
+		color: white;
+		font-weight: bold;
+		padding-top: 30px;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_10{
+		background-image: url(interview_15.png);
+		width: 700px; height: 80px;
+		background-size: contain;
+        box-sizing: border-box;
+		background-repeat: no-repeat;
+		margin-left: -130px;
+		opacity: 0;
+		animation: msg 2s 1 2s  forwards;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_10 p{
+		padding-left: 40px;
+		margin-top: 10px;
+		color: black;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_11{
+		background-image: url(interview_07.png);
+		width: 500px; height: 80px;
+		margin-left: 188px;
+		background-size: contain;
+        box-sizing: border-box;
+		background-repeat: no-repeat;
+		margin-top: 10px;
+		opacity: 0;
+		animation: msg 2s 1 3s  forwards;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_11 p{
+		margin-left: 30px;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_12{
+		margin-top: 10px;
+		background-image: url(interview_23.png);
+		width: 800px; height: 150px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		padding-top: 15px;
+		margin-left: -135px;
+		opacity: 0;
+		animation: msg 2s 1 4s  forwards;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_12 p{
+		padding-left: 30px;
+		color: black;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_13{
+		margin-top: 10px;
+		margin-left: 185px;
+		background-image: url(interview_14.png);
+		width: 450px; height: 100px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		opacity: 0;
+		animation: msg 2s 1 5s  forwards;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_14{
+		width: 700px; height: 190px;
+		margin-top: -10px;
+		margin-left: -138px;
+		background-size: cover;
+		background-image: url(interview_54.png);
+		background-repeat: no-repeat;
+		opacity: 0;
+		animation: msg 2s 1 6s  forwards;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_14 p{
+		padding-top: 35px;
+		padding-left: 20px;
+		color: black;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_15{
+		margin-top: 10px;
+		margin-left: 85px;
+		background-image: url(interview_92.png);
+		width: 550px; height: 80px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		opacity: 0;
+		animation: msg 2s 1 7s  forwards;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_16{
+		margin-top: 10px;
+		width: 650px; height: 190px;
+		margin-left: -138px;
+		background-size: contain;
+		background-image: url(interview_54.png);
+		background-repeat: no-repeat;
+		opacity: 0;
+		animation: msg 2s 1 8s  forwards;
+	}
+	#section .interveiw_section_3 .message_all_2 .message_16 p{
+		padding-left: 20px;
+		padding-top: 35px;
+		color: black;
+	}
+/*	3번째 성혼커플 */
+	#section .interveiw_section_4 h1{font-size: 70px;}
+
+    #section .interveiw_section_4{
+        background-image: url(interview_02.png);
+        background-size: 100%;
+        background-size: cover;
+        box-sizing: border-box;
+		width: calc(100% - 200px); 
+		margin: 0 auto;
+		height: 1080px;
+        }
+	#section .interveiw_section_4 .title_qanda_3{
+		font-size: 80pt;
+		padding-left: 260px;
+		text-align: center;
+		color: gray;
+		z-index: 100;
+		padding-top: 50px;
+		transform: rotate(-5deg);
+	}
+	#section .interveiw_section_4 .couple_3{
+		float: left;
+		background-image: url(interview_101.png);
+		background-size: cover;
+		width: 800px;
+		height: 1000px;
+		margin-left: 40px;
+		margin-top: -20px;
+	}
+	#section .interveiw_section_4 .couple_3 h1{
+		margin-top: 750px;
+		margin-left: 100px;
+		line-height: 80px;
+		text-align: center;
+		color: white;
+		font-size: 40pt;
+		text-shadow: 5px 5px 10px gray;
+	}
+	#section .interveiw_section_4 .message_all_3{
+		float: left;
+		width: 800px; height: 900px;
+		font-size: 13pt;
+		font-weight: bold;
+		margin-top: 15px;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_17{
+		background-image: url(interview_92.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 900px; height: 80px;
+		margin-left: 200px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 1s  forwards;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_17 p{
+		color: white;
+		padding-top: 25px;
+		padding-left: 30px;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_18{
+		background-image: url(interview_08.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 900px; height: 80px;
+		margin-left: 50px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 2s  forwards;
+		
+	}
+	#section .interveiw_section_4 .message_all_3 .message_18 p{
+		padding-top: 25px;
+		padding-left: 45px;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_19{
+		background-image: url(interview_92.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 900px; height: 80px;
+		margin-left: 200px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 3s  forwards;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_19 p{
+		padding-top: 25px;
+		padding-left: 45px;
+		color: white;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_20{
+		background-image: url(interview_87.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 600px; height: 180px;
+		margin-left: 50px;
+		opacity: 0;
+		animation: msg 2s 1 4s  forwards;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_20 p{
+		padding-top: 35px;
+		padding-left: 45px;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_21{
+		background-image: url(interview_92.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 600px; height: 80px;
+		margin-left: 200px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 5s  forwards;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_21 p{
+		color: white;
+		padding-top: 25px;
+		padding-left: 45px;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_22{
+		background-image: url(interview_87.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 800px; height: 190px;
+		margin-left: 50px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 6s  forwards;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_22 p{
+		padding-left: 45px;
+		padding-top: 35px;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_23{
+		background-image: url(interview_92.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 600px; height: 80px;
+		margin-left: 200px;
+		margin-bottom: 10px;
+		opacity: 0;
+		animation: msg 2s 1 7s  forwards;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_23 p{
+		color: white;
+		padding-top: 25px;
+		padding-left: 35px;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_24{
+		background-image: url(interview_08.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 700px; height: 100px;
+		margin-left: 50px;
+		opacity: 0;
+		animation: msg 2s 1 8s  forwards;
+	}
+	#section .interveiw_section_4 .message_all_3 .message_24 p{
+		padding-left: 50px;
+		padding-top: 20px;
+	}
+		   #footer{
+      width: 100%;
+      height: 400px;
+      background-color: ;
+    }
+
+    #footer .f_ubox{
+      margin-left: 180px;
+      padding-top: 20px;
+      overflow: hidden;
+    }
+
+    #footer .f_ubox .SNS{
+      /* border: 1px dashed white; */
+      width: 800px;
+    }
+
+    #footer .f_ubox .SNS li{
+      float: left;
+      margin-left: 25px;
+      margin-top: 22px;
+      color: #FFF;
+      /* background-color: rgba(127, 255, 212, 0.397); */
+    }
+
+    #footer .f_ubox .SNS .ytube_b{
+      color: #fff;
+      font-size: 25pt;
+      font-weight: bold;
+      letter-spacing: -3px;
+      font-style: normal;
+      /* background-color: aqua; */
+      line-height: 43px;
+      padding-right: 25px;
+      border-right: 1px solid #fff;
+    }
+
+    #footer .f_ubox .inquiry{
+      float: right;
+      color: white;
+      text-align: right;
+      padding-right: 200px;
+    }
+
+    #footer .f_ubox .inquiry li{
+      font-size: 20pt;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+    }
+
+    #footer .f_ubox .inquiry .inq_b1{
+      font-size: 30pt;
+      font-weight: bold;
+    }
+
+    #footer .f_ubox .inquiry .inq_b2{
+      font-size: 16pt;
+    }
+
+    #footer .f_bbox{
+      margin-left: 200px;
+      margin-right: 200px;
+      margin-top: 30px;
+      padding-bottom: 50px;
+      text-align: right;
+      overflow: hidden;
+      /* border: 1px dashed white; */
+      color: white;
+      letter-spacing: -1px;
+      position: relative;
+    }
+
+    #footer .f_bbox li{
+      float: left;
+    }
+
+    #footer .f_bbox .f_gnb{
+      float: right;
+      width: 780px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      /* background-color: aquamarine; */
+    }
+
+    #footer .f_bbox .f_gnb li{
+      margin-left: 30px;
+      font-weight: 500;
+      /* border: 1px dashed red; */
+    }
+
+    #footer .f_bbox .f_gnb li a{
+      color: white;
+    }
+
+    #footer .f_bbox p{
+      float: right;
+      font-size: 11pt;
+      margin-bottom: 10px;
+      color: #c0bebe;
+    }
+
+    #footer .f_bbox .f_logo{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+</style>
+</head>
+
+
+<body>
+<div id="header" class="clearFix">
+    <h1><img src="interview_03.png" alt="듀오로고"></h1>
+    <ul class="gnb">
+        <li><a href="#">듀오소개</a>
+			<ul class="sub">
+				<li><a href="#">CEO소개</a></li>
+				<li><a href="#">커플매니저 소개</a></li>
+				<li><a href="#">광고 갤러리</a></li>
+				<li><a href="#">언론에 비친 듀오</a></li>
+				<li><a href="#">듀오 지사찾기</a></li>
+			</ul>
+		</li>
+        <li><a href="#">가입안내</a>
+			<ul class="sub">
+				<li><a href="#">왜 듀오일까요?</a></li>
+				<li><a href="#">프로그램 안내</a></li>
+				<li><a href="#">가입/활동절차</a></li>
+				<li><a href="#">매칭시스템</a></li>
+				<li><a href="#">상담방법</a></li>
+			</ul>
+		</li>
+        <li><a href="#">고객문의</a>
+			<ul class="sub">
+				<li><a href="#">빠른상담</a></li>
+				<li><a href="#">간편상담예약</a></li>
+				<li><a href="#">안내자료요청</a></li>
+				<li><a href="#">나의 가입비 알아보기</a></li>
+				<li><a href="#">서비스 체험하기</a></li>
+			</ul>
+		</li>
+        <li><a href="#"> 회원&amp;성혼</a>
+			<ul class="sub">
+				<li><a href="#">회원현황</a></li>
+				<li><a href="#">희망상대 무료추천</a></li>
+				<li><a href="#">듀오회원검색</a></li>
+				<li><a href="#">성혼커플 인터뷰</a></li>
+			</ul>
+		</li>
+        <li><a href="#">파티이벤트</a>
+			<ul class="sub">
+				<li><a href="#">이벤트 보기</a></li>
+				<li><a href="#">기업제휴파티</a></li>
+				<li><a href="#">파티현장 갤러리</a></li>
+				<li><a href="#">듀오파티 Q&A</a></li>
+			</ul>
+		</li>
+    </ul>
+    <p><a href="#">상담문의<br>1577-8333</a></p>
+</div>
+<div id="section">
+    <div class="interveiw_section_1 clearFix" >
+			<h1>성혼 커플 인터뷰</h1>
+        <div class="mic"><img src="interview_102.png" alt="마이크"></div>
+        <div class="boss"><img src="interview_96.png" alt="듀오대표"></div>
+        <div class="qanda"><img src="interview_13.png" alt="Q&A"></div>
+        <div class="main_com">
+			<div class="com_1"><h3># 현실 실화 리얼100%</h3></div>
+        	<div class="com_2"><h3># 무엇이든 물어봐 듀오</h3></div>
+      		<div class="com_3"><h3># 설레주의! 심쿵주의!</h3></div>
+        </div>
+    </div>
+    
+    <div class="interveiw_section_2  clearFix">
+        <h1 class="titel_qanda">Q&amp;A</h1>
+		<div class="couple_1"><h1>윤*준 강*진<br>성혼커플 이야기</h1></div>
+        <div class="message_all">
+            <div class="message_1"><p>Q. 두 분 소개 부탁드립니다.</p></div>
+			<div class="message_2"><p>A. 안녕하세요. 저희는 서로 돌싱이었다가 새로운 삶을 함께하게 된<br>재혼 부부입니다!</p></div>
+			<div class="message_3"><p>Q. 어떻게 듀오의 가입하게 되었나요?</p></div>
+			<div class="message_4"><p>A. 재혼이라는 조건으로 쉽게 소개팅도 못했었는데, 우연히 광고를<br>보고나서 나도 새시작을 해볼 수 있겠구나 싶어 상담하게 되었어요.</p></div>
+			<div class="message_5"><p>Q. 두분이 만남을 결정하게 된 이유가 궁금해요~</p></div>
+			<div class="message_6"><p>A. 서로 재혼이라는 사실이 공통점으로 작용해서 말도 잘 통하고<br>오히려 편하게 만남을 이어갈 수 있었어요. 또, 매니저님이<br>찰떡같은 이상형을 매칭해 주셔서 다음은 고민할 필요도<br>없었죠(웃음). 다른 사람을 더 만나 볼 필요가 없었어요.</p></div>
+			<div class="message_7"><p>듀오 가입을 고민하는 사람들에게 한 말씀만 해주세요!</p></div>
+            <div class="message_8"><p>A. 다신 결혼 못 할 줄 알았던 돌싱남녀들! 두려워 마시고 새로운<br>
+            	시작을 듀오와 함께 해보세요.<br>친절하신 매니저님과 프라이빗한<br>상담을 통해 내 이상형을 만나실 수 있습니다. 우리 설레는<br>
+				신혼생활을 만끽 해 보세요~</p></div>
+        </div>
+    </div>
+    
+     <div class="interveiw_section_3  clearFix">
+        <h1 class="title_qanda_2">Q&amp;A</h1>
+        <div class="couple_2"><h1>남궁*진 서*광<br>성혼커플 이야기</h1></div>
+        <div class="message_all_2">
+            <div class="message_9"><p>Q. 두 분 소개 부탁드립니다.</p></div>
+			<div class="message_10"><p>A. 안녕하세요~ 듀오로 결혼에 골인한 이제 1년차 부부입니다.</p></div>
+			<div class="message_11"><p>Q. 어떻게 듀오의 가입하게 되었나요?</p></div>
+			<div class="message_12"><p>A. 이제 나이도 30대 들어서면서 결혼에 관심을 가지고<br>	있었는데 재미 삼아 듀오 설문조사에 참여하게 되었고<br>매니저님과 상담을 통해 가입하게 되었어요.</p></div>
+			<div class="message_13"><p>Q. 두분이 만남을 결정하게 된 이유가 궁금해요~</p></div>
+			<div class="message_14"><p>A. 매니점님과 상담을 통해 제가 바라던 이상형과 만나서 그런지 첫 만남부터<br>재밌었던 것 같아요. 대화코드도 맞고 취미도 비슷하다 보니 3번째 만남 후에<br>
+				남편이 진지하게 만나보고 싶다고 얘기하는데 심장이 터질듯이 뛰더라고요.<br>그렇게 이 사람과 1년 정도 연애를 했는데, 이 사람이라면 평생을 함께 해도<br> 되겠다라는 생각이 들어 결혼하게 되었습니다.</p></div>
+			<div class="message_15"><p>Q. 듀오 가입을 고민하는 사람들에게 한 말씀만 해주세요!</p></div>
+            <div class="message_16"><p>매칭 만남에 대해서 선입견이 있었는데 막상 만나보니 오히려 내가 바라던<br>배우자와 만날 수 있을 분더러 새롭게 만나는 과정은 똑같이 설레고<br>두근거렸어요~ 왜 더 빨리 가입하지 않았을까 후회가 되네요~!<br> 가지고 계신 걱정들은 모두 내려놓으시고 하루라도 빨리 가입하시는걸<br>추천드립니다!^^</p></div>
+        </div>
+    </div>
+       <div class="interveiw_section_4  clearFix">
+        <h1 class="title_qanda_3">Q&amp;A</h1>
+        <div class="couple_3"><h1>이*미 이*성<br>성혼커플 이야기</h1></div>
+        <div class="message_all_3">
+            <div class="message_17"><p>Q. 두 분 소개 부탁드립니다.</p></div>
+			<div class="message_18"><p>A. 안녕하세요~ 첫 만남에  운명을 확신한 결혼 3년차 부부입니다. </p></div>
+			<div class="message_19"><p>Q. 어떻게 듀오의 가입하게 되었나요?</p></div>
+			<div class="message_20"><p>A. 소개팅이 게속 실패하면서 나는 결혼은 물건너 갔구나~라고<br>생각하고있었는데 직장 동료분께서 ‘듀오’를 추천해주시더라고요. <br>눈이 높은 저게에 딱이라며. 혹시나하는 마음에 상담받게 되었고<br> 친절한 매니저님께 신뢰가 생기면서 가입하게 되었어요.</p></div>
+			<div class="message_21"><p>Q. 두분이 만남을 결정하게 된 이유가 궁금해요~</p></div>
+			<div class="message_22"><p>A. 제가 옷을 좋아하다보니 이성을 볼 때 패션 센스를중요하게보는 것 같아요.<br>매니저님께서 이런거 까지 맞춰 주실수 있을까? 기대 반 걱정 반하고 만나러<br> 갔었는데 누가봐도 커플인것 처럼 비슷하게 입고 오셔서 깜짝 놀랐어요. <br>그때 부터 운명이라 생각하게 된것 같아요. 이후에는 비슷한 부분이 맞는걸 <br>확인하면서  자연스럽게  결혼까지하게되었습니다.</p></div>
+			<div class="message_23"><p>Q. 듀오 가입을 고민하는 사람들에게 한 말씀만 해주세요!</p></div>
+            <div class="message_24"><p>A. 이런거까지 맞춰 주실 수 있나 하는 것 까지 모두 맞춰주십니다. 고민시간은<br>결혼을 늦추는일이니 고민하지 마시고 가입하세요! 강추입니다.</p></div>
+        </div>
+    </div>
+	</div>
+	 <div id="footer">
+    <div class="f_ubox">
+      <ul class="SNS">
+        <li><a href="#"><img src="images/footer_1.png" alt="유튭">&nbsp;&nbsp;<span class="ytube_b">유튜브 채널</span></a></li>
+        <li><a href="#"><img src="images/footer_2.png" alt="페북"></a></li>
+        <li><a href="#"><img src="images/footer_3.png" alt="인스타"></a></li>
+        <li><a href="#"><img src="images/footer_4.png" alt="네이버블로그"></a></li>
+        <li><a href="#"><img src="images/footer_5.png" alt="카톡"></a></li>
+        <li><a href="#"><img src="images/footer_6.png" alt="카카오스토리"></a></li>
+      </ul>
+      <ul class="inquiry">
+        <li>상담문의 <span class="inq_b1">1577-8333</span></li>
+        <li class="inq_b2">주말 및 공휴일 상담예약 가능</li>
+      </ul>
+  </div>
+    <div class="f_bbox">
+        <ul class="f_gnb">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">손해배상청구절차</a></li>
+          <li><a href="#">제휴문의</a></li>
+          <li><a href="#">채용공고</a></li>
+          <li><a href="#">찾아오시는길</a></li>
+        </ul>
+        <p>
+          서울 강남구 강남대로 406 (역삼동 820-9 글라스타워) 11,12,16층 (06134) 상호명 : 듀오정보(주) / 대표자 : 박수경 /<br>
+          결혼중개업 신고번호 : 강남 080031 / 등록번호 : 서울 080079 / 사업자등록번호 : 214-86-28824 통신판매업 신고 : 강남 - 3259호 [사업자정보확인]<br>
+          무료상담전화 : 1577-8333 / Fax : 02-550-6003 / Email : duo@duonet.com<br>
+          COPYRIGHT(c)DUOINFO CORP. ALL RIGHTS RESERVED
+        </p>
+        <img class="f_logo" src="images/footer_7.png" alt="flogo">
+    </div>
+  </div>
+	
+</body>
+</html>
