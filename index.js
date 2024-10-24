@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  $(".header_wrap").mouseover(function(){
+  $("#header").mouseover(function(){
     $(".header_wrap").stop().animate({"height":"250px"})
     $(".header_wrap").css({"background-color":"#ffffff45"})
   });
-  $(".header_wrap").mouseleave(function(){
+  $("#header").mouseleave(function(){
     $(".header_wrap").stop().animate({"height":"50px"})
     $(".header_wrap").css({"background-color":"#ffffff00"})
   });

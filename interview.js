@@ -27,7 +27,7 @@ $(document).ready(function(){
         });
         
 
-  $(".analyze_menu>li").click(function(){
+  $(".analyze_menu>li").mouseenter(function(){
     let list = $(this).index();
 
     $(".analyze_conts>li").stop().fadeOut();
